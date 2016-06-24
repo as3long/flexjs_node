@@ -4,7 +4,7 @@ package
 	import com.as3long.node.native.http.Server;
 	import com.as3long.node.native.http.ServerResponse;
 	/**
-	 * ...
+	 * 入口文件
 	 * @author lonnyhuang
 	 */
 	public class Main 
