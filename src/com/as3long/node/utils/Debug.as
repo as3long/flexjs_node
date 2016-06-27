@@ -16,7 +16,8 @@ package com.as3long.node.utils
 		{
 			for (var k:String in obj)
 			{
-				trace(k, obj[k]);
+				trace(k);
+				// trace(k, obj[k]);
 			}
 		}
 		

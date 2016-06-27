@@ -10,6 +10,7 @@ package
 	public class Main 
 	{
 		private var server:Server;
+		private var port:int = 9922;
 		public function Main() 
 		{
 			init();
@@ -18,12 +19,13 @@ package
 		private function init():void 
 		{
 			server = Http.createServer(route);
-			server.listen(9922);
+			server.listen(port);
+			trace("服务启动端口" + port);
 		}
 		
 		private function route(req:*, res:ServerResponse):void
 		{
-			res.write('hello\n');
+			res.write('hello1\n');
 			res.write('hello2\n');
 			res.write('hello world');
 			res.end();

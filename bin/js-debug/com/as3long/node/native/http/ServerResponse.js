@@ -42,7 +42,7 @@ com.as3long.node.native.http.ServerResponse.prototype._sendDate;
 
 
 /**
- * ·¢ËÍÒ»¸ö HTTP/1.1 100 Continue ÏûÏ¢ÖÁ¿Í»§¶Ë£¬±íÃ÷ÇëÇóÌå¿ÉÒÔ±»·¢ËÍ¡£¿ÉÒÔÔÚ·şÎñÆ÷ÉÏ²é
+ * å‘é€ä¸€ä¸ª HTTP/1.1 100 Continue æ¶ˆæ¯è‡³å®¢æˆ·ç«¯ï¼Œè¡¨æ˜è¯·æ±‚ä½“å¯ä»¥è¢«å‘é€ã€‚å¯ä»¥åœ¨æœåŠ¡å™¨ä¸ŠæŸ¥
  * @asreturn
  * @export
  * @return {*}
@@ -53,7 +53,7 @@ com.as3long.node.native.http.ServerResponse.prototype.writeContinue = function()
 
 
 /**
- * ÏòÇëÇó»Ø¸´ÏìÓ¦Í·
+ * å‘è¯·æ±‚å›å¤å“åº”å¤´
  * @asreturn
  * @export
  * @param {...} args
@@ -78,7 +78,7 @@ com.as3long.node.native.http.ServerResponse.prototype.write = function(chunk, en
 
 
 /**
- * Éè¶¨Ì×½Ó×ÖµÄ³¬Ê±Ê±¼äÎªmsecs¡£Èç¹ûÌá¹©ÁË»Øµ÷º¯Êı£¬»á½«ÆäÌí¼ÓÎªÏìÓ¦¶ÔÏóµÄ'timeout'ÊÂ¼şµÄ¼àÌıÆ÷¡£
+ * è®¾å®šå¥—æ¥å­—çš„è¶…æ—¶æ—¶é—´ä¸ºmsecsã€‚å¦‚æœæä¾›äº†å›è°ƒå‡½æ•°ï¼Œä¼šå°†å…¶æ·»åŠ ä¸ºå“åº”å¯¹è±¡çš„'timeout'äº‹ä»¶çš„ç›‘å¬å™¨ã€‚
  * @asparam	msecs
  * @asparam	callback
  * @asreturn
@@ -93,7 +93,7 @@ com.as3long.node.native.http.ServerResponse.prototype.setTimeout = function(msec
 
 
 /**
- * ÎªÄ¬ÈÏ»òÕßÒÑ´æÔÚµÄÍ·ÉèÖÃÒ»Ìõµ¥¶ÀµÄÍ·ÄÚÈİ¡£Èç¹ûÕâ¸öÍ·ÒÑ¾­´æÔÚÓÚ ½«±»ËÍ³öµÄÍ·ÖĞ£¬½«»á¸²¸ÇÔ­À´µÄÄÚÈİ¡£Èç¹ûÎÒÏëÉèÖÃ¸ü¶àµÄÍ·£¬ ¾ÍÊ¹ÓÃÒ»¸öÏàÍ¬Ãû×ÖµÄ×Ö·û´®Êı×é
+ * ä¸ºé»˜è®¤æˆ–è€…å·²å­˜åœ¨çš„å¤´è®¾ç½®ä¸€æ¡å•ç‹¬çš„å¤´å†…å®¹ã€‚å¦‚æœè¿™ä¸ªå¤´å·²ç»å­˜åœ¨äº å°†è¢«é€å‡ºçš„å¤´ä¸­ï¼Œå°†ä¼šè¦†ç›–åŸæ¥çš„å†…å®¹ã€‚å¦‚æœæˆ‘æƒ³è®¾ç½®æ›´å¤šçš„å¤´ï¼Œ å°±ä½¿ç”¨ä¸€ä¸ªç›¸åŒåå­—çš„å­—ç¬¦ä¸²æ•°ç»„
  * @asparam	name
  * @asparam	value
  * @asreturn
@@ -118,7 +118,7 @@ com.as3long.node.native.http.ServerResponse.prototype.getHeader = function(name)
 
 
 /**
- * È¡ÏûµôÒ»¸öÔÚ¶ÓÁĞÄÚµÈ´ı·¢ËÍµÄheader¡£
+ * å–æ¶ˆæ‰ä¸€ä¸ªåœ¨é˜Ÿåˆ—å†…ç­‰å¾…å‘é€çš„headerã€‚
  * @asparam	name
  * @export
  * @param {string} name
@@ -129,7 +129,7 @@ com.as3long.node.native.http.ServerResponse.prototype.removeHeader = function(na
 
 
 /**
- * Õâ¸ö·½·¨Ìí¼ÓHTTPÎ²Ëæheaders£¨Ò»¸öÔÚÏûÏ¢Ä©Î²µÄheader£©¸øÏìÓ¦¡£
+ * è¿™ä¸ªæ–¹æ³•æ·»åŠ HTTPå°¾éšheadersï¼ˆä¸€ä¸ªåœ¨æ¶ˆæ¯æœ«å°¾çš„headerï¼‰ç»™å“åº”ã€‚
  * @asparam	headers
  * @export
  * @param {*} headers

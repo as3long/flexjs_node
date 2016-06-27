@@ -32,10 +32,18 @@ Main.prototype.server;
 
 /**
  * @private
+ * @type {number}
+ */
+Main.prototype.port = 9922;
+
+
+/**
+ * @private
  */
 Main.prototype.init = function() {
   this.server = com.as3long.node.native.http.Http.createServer(org.apache.flex.utils.Language.closure(this.route, this, 'route'));
-  this.server.listen(9922);
+  this.server.listen(this.port);
+  org.apache.flex.utils.Language.trace("服务启动端口" + this.port);
 };
 
 
@@ -45,7 +53,7 @@ Main.prototype.init = function() {
  * @param {com.as3long.node.native.http.ServerResponse} res
  */
 Main.prototype.route = function(req, res) {
-  res.write('hello\n');
+  res.write('hello1\n');
   res.write('hello2\n');
   res.write('hello world');
   res.end();

@@ -1,0 +1,1 @@
+C:\Windows\System32\cmd.exe /C E:\flex_sdk\flexjs-0.6.0\js\bin\asnodec.bat E:\code\flash\flexjs_node\src\Main.as

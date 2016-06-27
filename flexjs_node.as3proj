@@ -80,14 +80,14 @@
     <hidden path="obj" />
   </hiddenPaths>
   <!-- Executed before build -->
-  <preBuildCommand>E:\flex_sdk\flexjs-0.6.0\js\bin\asnodec.bat src/Main.as</preBuildCommand>
+  <preBuildCommand>bat\bulid.bat</preBuildCommand>
   <!-- Executed after build -->
   <postBuildCommand alwaysRun="False" />
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
     <option testMovie="Custom" />
-    <option testMovieCommand="" />
+    <option testMovieCommand="bat\bulid.bat" />
   </options>
   <!-- Plugin storage -->
   <storage />

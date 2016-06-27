@@ -24,7 +24,7 @@ com.as3long.node.utils.Debug = function() {
  */
 com.as3long.node.utils.Debug.prototype.outObject = function(obj) {
   for (var /** @type {string} */ k in obj) {
-    org.apache.flex.utils.Language.trace(k, obj[k]);
+    org.apache.flex.utils.Language.trace(k);
   }
 };
 
